@@ -62,7 +62,7 @@ header {
 }
 
 /* ===============================
-   HERO SECTION
+   HERO SECTION (UPDATED)
 ================================ */
 .hero {
   height: 80vh;
@@ -75,13 +75,14 @@ header {
 .hero-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
+  justify-content: center;   /* center both sides */
+  gap: 4rem;                 /* spacing between text & image */
   width: 100%;
 }
 
 .hero-text {
-  width: 50%;
+  width: 45%;
+  margin-left: 3rem;         /* shift text toward center */
 }
 
 .hero-text h1 {
@@ -94,15 +95,14 @@ header {
 }
 
 .hero-image {
-  width:100%;
+  width: 50%;
   text-align: center;
 }
 
 .hero-image img {
-  width:100%;
-  max-width: 300px;
+  width: 100%;
+  max-width: 380px;          /* increased image size */
   border-radius: 20%;
-
 }
 
 /* ===============================
@@ -167,6 +167,7 @@ section {
   font-size: 0.8rem;
   border-radius: 4px;
 }
+
 /* ===============================
    PROJECTS FLEXBOX
 ================================ */
@@ -206,6 +207,27 @@ section {
   color: var(--gray);
 }
 
+/* ===============================
+   TECH STACK STYLING
+================================ */
+.tech-stack {
+  margin-top: 1rem;
+}
+
+.tech-stack span {
+  font-weight: bold;
+  margin-right: 0.6rem;
+  font-size: 0.9rem;
+}
+
+/* Individual colors */
+.html { color: #e34c26; }
+.css { color: #264de4; }
+.js { color: #f7df1e; }
+.php { color: #777bb4; }
+.react { color: #61dafb; }
+.node { color: #3c873a; }
+.mongo { color: #4db33d; }
 
 /* ===============================
    GRID GALLERY
@@ -286,6 +308,7 @@ footer {
   .hero-text,
   .hero-image {
     width: 100%;
+    margin-left: 0;
   }
 
   .gallery {
@@ -310,45 +333,65 @@ footer {
     grid-template-columns: 1fr;
   }
 }
-/* ===============================
-   TECH STACK STYLING
-================================ */
-.tech-stack {
-  margin-top: 1rem;
+/* Collaborate Section */
+.collaborate {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f9fafb;
 }
 
-.tech-stack span {
-  font-weight: bold;
-  margin-right: 0.6rem;
-  font-size: 0.9rem;
+.collaborate h2 {
+  margin-bottom: 30px;
 }
 
-/* Individual colors */
-.html {
-  color: #e34c26;
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
 
-.css {
-  color: #264de4;
+.social-icons a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
 }
 
-.js {
-  color: #f7df1e;
+.social-icons i {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 8px;
 }
 
-.php {
-  color: #777bb4;
+/* Skills & Tools */
+.skills-tools {
+  padding: 60px 20px;
+  text-align: center;
 }
 
-.react {
-  color: #61dafb;
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
 
-.node {
-  color: #3c873a;
+.skill-box {
+  border: 1px solid #ddd;
+  padding: 25px;
+  width: 260px;
+  border-radius: 10px;
 }
 
-.mongo {
-  color: #4db33d;
+.skill-box h3 {
+  margin-bottom: 15px;
 }
 
+.skill-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-box li {
+  padding: 6px 0;
+}
