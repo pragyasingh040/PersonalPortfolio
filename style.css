@@ -310,4 +310,45 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+/* ===============================
+   TECH STACK STYLING
+================================ */
+.tech-stack {
+  margin-top: 1rem;
+}
+
+.tech-stack span {
+  font-weight: bold;
+  margin-right: 0.6rem;
+  font-size: 0.9rem;
+}
+
+/* Individual colors */
+.html {
+  color: #e34c26;
+}
+
+.css {
+  color: #264de4;
+}
+
+.js {
+  color: #f7df1e;
+}
+
+.php {
+  color: #777bb4;
+}
+
+.react {
+  color: #61dafb;
+}
+
+.node {
+  color: #3c873a;
+}
+
+.mongo {
+  color: #4db33d;
+}
 
