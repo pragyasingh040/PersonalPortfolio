@@ -1,16 +1,11 @@
-/* ===============================
-   CSS VARIABLES
-================================ */
+
 :root {
-  --primary: #22c55e;   /* Green */
-  --dark: #000000;      /* Black */
-  --light: #ffffff;     /* White */
+  --primary: #22c55e;   
+  --dark: #000000;      
+  --light: #ffffff;     
   --gray: #9ca3af;
 }
 
-/* ===============================
-   GLOBAL STYLES
-================================ */
 * {
   margin: 0;
   padding: 0;
@@ -24,9 +19,7 @@ body {
   line-height: 1.6;
 }
 
-/* ===============================
-   NAVBAR
-================================ */
+/*NAVBAR*/
 header {
   position: sticky;
   top: 0;
@@ -65,9 +58,7 @@ header {
   color: var(--primary);
 }
 
-/* ===============================
-   HERO SECTION (UPDATED)
-================================ */
+/*HERO SECTION*/
 .hero {
   height: 80vh;
   display: flex;
@@ -84,14 +75,14 @@ header {
 .hero-content {
   display: flex;
   align-items: center;
-  justify-content: center;   /* center both sides */
-  gap: 3rem;                 /* spacing between text & image */
+  justify-content: center;   
+  gap: 3rem;                 
   width: 100%;
 }
 
 .hero-text {
   width: 45%;
-  margin-left: 4rem;         /* shift text toward center */
+  margin-left: 4rem;        
 }
 
 .hero-text h1 {
@@ -114,9 +105,7 @@ header {
   border-radius: 20%;
 }
 
-/* ===============================
-   BUTTON
-================================ */
+/*BUTTON*/
 .btn {
   display: inline-block;
   padding: 0.7rem 1.5rem;
@@ -131,9 +120,7 @@ header {
   background: #16a34a;
 }
 
-/* ===============================
-   SECTIONS
-================================ */
+/*SECTIONS*/
 section {
   padding: 4rem 5%;
   
@@ -144,9 +131,7 @@ section {
   margin-bottom: 2rem;
 }
 
-/* ===============================
-   CARDS (FLEXBOX)
-================================ */
+/*CARDS*/
 .card-container {
   display: flex;
   gap: 2rem;
@@ -178,9 +163,10 @@ section {
   border-radius: 4px;
 }
 
-/* ===============================
-   PROJECTS FLEXBOX
-================================ */
+
+
+
+/*flexbox*/
 .project-container {
   display: flex;
   gap: 2rem;
@@ -217,9 +203,7 @@ section {
   color: var(--gray);
 }
 
-/* ===============================
-   TECH STACK STYLING
-================================ */
+
 .tech-stack {
   margin-top: 1rem;
 }
@@ -230,7 +214,7 @@ section {
   font-size: 0.9rem;
 }
 
-/* Individual colors */
+
 .html { color: #e34c26; }
 .css { color: #264de4; }
 .js { color: #f7df1e; }
@@ -239,9 +223,7 @@ section {
 .node { color: #3c873a; }
 .mongo { color: #4db33d; }
 
-/* ===============================
-   GRID GALLERY
-================================ */
+/
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -253,9 +235,7 @@ section {
   background: #1f2933;
 }
 
-/* ===============================
-   SKILLS SECTION
-================================ */
+/*SKILLS*/
 .skills {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -268,9 +248,7 @@ section {
   text-align: center;
 }
 
-/* ===============================
-   CONTACT FORM
-================================ */
+/* CONTACT FORM*/
 form {
   max-width: 500px;
   margin: auto;
@@ -291,9 +269,7 @@ textarea:focus {
   border-color: var(--primary);
 }
 
-/* ===============================
-   FOOTER
-================================ */
+/* FOOTER*/
 footer {
   background: #111;
   text-align: center;
@@ -306,9 +282,7 @@ footer {
   text-decoration: none;
 }
 
-/* ===============================
-   MEDIA QUERIES
-================================ */
+/*MEDIA QUERIES*/
 @media (max-width: 768px) {
   .hero-content {
     flex-direction: column;
@@ -345,13 +319,11 @@ footer {
 }
 
 
-/* ===============================
-   COLLABORATE SECTION (DARK)
-================================ */
+/*COLLABORATE SECTION*/
 .collaborate {
   text-align: center;
   padding: 60px 20px;
-  background: #000;              /* Black background */
+  background: #000;              
   color: #fff;
 }
 
@@ -389,13 +361,8 @@ footer {
 
 
 
-/* ===============================
-   SKILLS WITH ICONS
-================================ */
+/*ICONS*/
 
-/* ===============================
-   SPLIT SKILLS INTO 2 COLUMNS
-================================ */
 .skill-box .skill-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 columns */
@@ -404,9 +371,7 @@ footer {
 }
 
 
-/* ===============================
-   SKILLS & TOOLS FLEX LAYOUT
-================================ */
+/*SKILLS AND TOOLS*/
 .skills-container {
   display: flex;
   justify-content: center;
