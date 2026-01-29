@@ -101,7 +101,7 @@ header {
 
 .hero-image img {
   width: 100%;
-  max-width: 380px;          /* increased image size */
+  max-width: 600px;          /* increased image size */
   border-radius: 20%;
 }
 
